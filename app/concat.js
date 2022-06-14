@@ -1,6 +1,8 @@
-const appArr = require('./appArr')
-const converted = require('./converted')
-const lodash = require('lodash')
+const lodash = require("lodash");
+const arr = require("./appArr");
 
-const concatedArr = lodash.concat(converted.jsonArr.data, appArr.appArr )
-module.exports.concatedArray = concatedArr;
+function concat(list) {
+    return lodash.concat(list, arr.appArr);
+}
+
+module.exports.concat = concat;

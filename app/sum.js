@@ -1,7 +1,7 @@
-const concatedArr = require('./concat')
-
-let sum = 0
-
-concatedArr.concatedArray.forEach(element => sum += element)
+function sum(arr) {
+    return arr.reduce((p, c) => {
+        return p + c;
+    }, 0)
+}
 
 module.exports.sum = sum;
